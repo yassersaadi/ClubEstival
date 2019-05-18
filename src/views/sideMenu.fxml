@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -9,11 +10,22 @@
    <children>
       <Pane prefHeight="146.0" prefWidth="150.0" />
       <Separator prefHeight="5.0" prefWidth="150.0" />
-      <JFXButton fx:id="btnAddImmobilier" layoutX="10.0" layoutY="110.0" onAction="#addImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Ajout Immobilier" />
-      <JFXButton fx:id="btnUpdateImmobilier" onAction="#updateImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Modifier Immbilier" />
-      <JFXButton fx:id="btnDelImmobilier" layoutX="10.0" layoutY="211.0" onAction="#deleteImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Delete Immobilier" />
+      <JFXButton fx:id="btnAddImmobilier1" layoutX="10.0" layoutY="162.0" onAction="#addImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Home">
+         <graphic>
+            <FontAwesomeIcon iconName="HOME" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnAddImmobilier" layoutX="10.0" layoutY="110.0" onAction="#addImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Client/Hebergement" />
+      <JFXButton fx:id="btnUpdateImmobilier" onAction="#updateImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Etat reservation" />
+      <JFXButton fx:id="btnDelImmobilier" layoutX="10.0" layoutY="211.0" onAction="#deleteImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Client/Restauration" />
       <Separator prefWidth="150.0" />
-      <JFXButton fx:id="btnLogOut" layoutX="10.0" layoutY="362.0" onAction="#logOut" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Log out" />
-      <JFXButton fx:id="btnExit" layoutX="10.0" layoutY="316.0" onAction="#exit" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Exit" />
+      <JFXButton fx:id="btnLogOut" layoutX="10.0" layoutY="362.0" onAction="#logOut" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Log out">
+         <graphic>
+            <FontAwesomeIcon iconName="SIGN_OUT" size="20" wrappingWidth="19.79998779296875" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnExit" layoutX="10.0" layoutY="316.0" onAction="#exit" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Exit">
+         <graphic>
+            <FontAwesomeIcon iconName="SIGN_OUT" size="20" />
+         </graphic></JFXButton>
    </children>
 </VBox>
