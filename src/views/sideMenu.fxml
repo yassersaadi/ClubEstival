@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="150.0" styleClass="side-menu" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SideMenuController">
+   <children>
+      <Pane prefHeight="146.0" prefWidth="150.0" />
+      <Separator prefHeight="5.0" prefWidth="150.0" />
+      <JFXButton fx:id="btnAddImmobilier" layoutX="10.0" layoutY="110.0" onAction="#addImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Ajout Immobilier" />
+      <JFXButton fx:id="btnUpdateImmobilier" onAction="#updateImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Modifier Immbilier" />
+      <JFXButton fx:id="btnDelImmobilier" layoutX="10.0" layoutY="211.0" onAction="#deleteImmobilier" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Delete Immobilier" />
+      <Separator prefWidth="150.0" />
+      <JFXButton fx:id="btnLogOut" layoutX="10.0" layoutY="362.0" onAction="#logOut" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Log out" />
+      <JFXButton fx:id="btnExit" layoutX="10.0" layoutY="316.0" onAction="#exit" prefHeight="66.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style.css" text="Exit" />
+   </children>
+</VBox>

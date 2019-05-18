@@ -1,0 +1,40 @@
+.toolbar{
+    -fx-background-color: #FFDE03;
+}
+.jfx-hamburger-icon{
+    -fx-spacing: 4px;
+}
+
+.jfx-hamburger StackPane{
+    -fx-background-color:#000000;
+    -fx-pref-width: 30px;
+    -fx-background-radius: 5px;
+}
+
+.side-menu{
+    -fx-background-color:#FFDE03;
+}
+
+.side-menu-button{
+    -fx-background-color:#FFDE03 ;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0px;
+    -fx-border-style: none;
+    -fx-text-fill:#000000;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-cursor:hand;
+    -fx-alignment:CENTER_LEFT;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+
+.side-menu-button:hover{
+    -fx-background-color: #0336FF;
+    -fx-text-fill:#FFFFFF;
+}
+.side-menu-button:default{
+    -fx-background-color:#FFDE03 ;
+}
