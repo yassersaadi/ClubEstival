@@ -5,7 +5,7 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AddImmobilierController implements Initializable {
+public class EtatReservationController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

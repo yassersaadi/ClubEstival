@@ -1,8 +1,10 @@
 package controllers;
 
+import Utils.Constants;
 import com.jfoenix.controls.JFXDrawer;
 import com.jfoenix.controls.JFXHamburger;
 import com.jfoenix.controls.JFXToolbar;
+import com.sun.webkit.network.Util;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,22 +20,26 @@ import java.util.ResourceBundle;
 
 public class SideMenuController implements Initializable {
 
+    @FXML
+    private void home(ActionEvent event){
 
-    //Methods that executes on clickButtons Event
-    @FXML
-    private void addImmobilier(ActionEvent event){
-        //Add page immobilier
-        switchPane("/views/addImmobilier.fxml ");
     }
+
     @FXML
-    private void updateImmobilier(ActionEvent event){
-        //Add page update
-        switchPane("/views/updateImmobilier.fxml");
+    private void listerClientHebergement(ActionEvent event){
+        switchPane(Constants.LISTERCLIENTHEBERG);
     }
+
     @FXML
-    private void deleteImmobilier(ActionEvent event){
-        //Add page delete
+    private void etatResarvation(ActionEvent event){
+        switchPane(Constants.ETATRESERVATION);
     }
+
+    @FXML
+    private void listerClientRestauration(ActionEvent event){
+        switchPane(Constants.LISTERCLIENTREST);
+    }
+
     @FXML
     private void logOut(ActionEvent event){
         //Add page logOut
@@ -55,12 +61,15 @@ public class SideMenuController implements Initializable {
             MainViewController.temporaryPane.getChildren().clear();
             StackPane pane2 = FXMLLoader.load(getClass().getResource(pane));
             ObservableList<Node> elements = pane2.getChildren();
+            System.out.println("Elements "+elements.toString());
             MainViewController.temporaryPane.getChildren().setAll(elements);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
+
+
 
 
 

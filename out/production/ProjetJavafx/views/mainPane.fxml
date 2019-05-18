@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainPaneController">
+   <children>
+      <StackPane fx:id="mainPane" prefHeight="402.0" prefWidth="600.0">
+         <children>
+            <JFXButton text="MainPane">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

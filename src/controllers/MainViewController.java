@@ -5,13 +5,10 @@ import com.jfoenix.controls.JFXDrawer;
 import com.jfoenix.controls.JFXHamburger;
 import com.jfoenix.controls.JFXToolbar;
 import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition;
-import javafx.beans.Observable;
-import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
@@ -33,11 +30,16 @@ public class MainViewController implements Initializable {
     private AnchorPane contentPane;
     @FXML
     private JFXDrawer drawer;
+    @FXML
+    private StackPane mainPane;
 
     public static AnchorPane temporaryPane;
 
+    public static StackPane pane;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        pane = mainPane;
         temporaryPane = contentPane;
         initDrawer();
     }
